@@ -1,0 +1,66 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  margin: 50px 0;
+}
+
+
+.weather {
+  max-width: 90%;
+  margin: 0 auto;
+  background: pink;
+  padding: 20px;
+  box-shadow: 0 5px rgba(0,0,0,0.1);
+  border-radius: 6px;
+
+  @media(min-width: $medium-screen) {
+    max-width: 40%;
+  }
+
+  &__temperature {
+    margin-top: 50px;
+    text-align: center;
+
+    &--temp {
+      font-size: 80px;
+    }
+  }
+
+  &__text {
+    text-align: center;
+
+    &--description {
+      color: black;
+      font-size: 18px;
+    }
+  }
+
+  &__icon {
+    margin-top: 5px;
+
+    &--image {
+      display: block;
+      margin: 0 auto;
+      padding: 5px 0;
+      width: 150px;
+      height: auto;
+    }
+  }
+
+  &__location {
+    text-align: center;
+    &--text {
+      letter-spacing: 5px;
+      font-size: 22px;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.degrees {
+  color: red;
+  font-size: 20px;
+}
